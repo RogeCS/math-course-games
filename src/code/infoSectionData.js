@@ -1,16 +1,29 @@
 export const homeObjOne = {
   id: "about",
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  bgColor: "light",
+  Text: "dark",
+  TextDesc: "dark",
   topLine: "Nosotros",
-  headline: "Nos enfocamos en promover el pensamiento científico",
+  headline: "Nos enfocamos en promover la educación",
   description:
-    "Uno de los problemas más grandes de méxico es la deficiencia y falta",
+    "En méxico no hay servicios de calidad para que los estudiantes puedan ",
   buttonLabel: "Apóyanos",
-  imgStart: false,
   img: require("../assets/static/undraw_good_team_m7uu.svg"),
   alt: "car",
   primary: true,
-  darkText: false,
+};
+
+export const homeObjTwo = {
+  id: "donor",
+  bgColor: "dark",
+  Text: "light",
+  TextDesc: "light",
+  topLine: "Sé parte",
+  headline: "Ayudanos a continuar",
+  description:
+    "Es importante que todos tengan acceso a la educación y a recursos educativos adecuados. ¡Puedes donar para apoyarnos y seguir con el proyecto!",
+  buttonLabel: "Premuim",
+  img: require("../assets/static/undraw_make_it_rain_iwk4.svg"),
+  alt: "Dona para apoyarnos",
+  primary: true,
 };

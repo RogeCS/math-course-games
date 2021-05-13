@@ -6,10 +6,10 @@ function HeroSection() {
     <div className="hero__container">
       <div className="hero-background"></div>
       <section className="hero-content">
-        <h1 className="hero-title">Mates para todos</h1>
+        <h1 className="hero-title">Intenta una nueva forma de aprender</h1>
         <p className="hero-description">
-          Mejora en temas de matemáticas realizando diferentes ejercicios
-          mientras aprendes de manera interactiva
+          Desarrolla un pensamiento lógico matemático de manera interactiva, no
+          aprendas a resolver, aprende a razonar!
         </p>
       </section>
     </div>

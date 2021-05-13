@@ -12,6 +12,7 @@
 }
 
 .hero-background {
+  background: $main-color;
   position: absolute;
   top: 0;
   right: 0;
@@ -33,14 +34,14 @@
 }
 
 .hero-title {
-  color: $main-color;
+  color: $white-color;
   font-size: 48px;
   text-align: center;
 }
 
 .hero-description {
   margin-top: 24px;
-  color: $main-color;
+  color: $white-color;
   font-size: 24px;
   text-align: center;
   max-width: 600px;

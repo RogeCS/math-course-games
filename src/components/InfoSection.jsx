@@ -5,7 +5,9 @@ import "../assets/styles/components/InfoSection.scss";
 
 const InfoSection = ({
   id,
-  imgStart,
+  bgColor,
+  Text,
+  TextDesc,
   topLine,
   headline,
   description,
@@ -14,14 +16,14 @@ const InfoSection = ({
   alt,
 }) => {
   return (
-    <div className="info__container" id={id}>
+    <div className={`info__container-${bgColor}`} id={id}>
       <div className="info-wrapper">
-        <div className="info-row" imgstart={imgStart}>
+        <div className="info-row">
           <section className="column1">
             <div className="text-wrapper">
               <p className="top-line"> {topLine} </p>
-              <h1 className="info-heading">{headline}</h1>
-              <h2 className="info-subtitle">{description}</h2>
+              <h1 className={`info-heading-${Text}`}>{headline}</h1>
+              <h2 className={`info-subtitle-${TextDesc}`}>{description}</h2>
               <div className="btn-wrap">
                 <Button to="home" title={buttonLabel} type="light-button" />
               </div>

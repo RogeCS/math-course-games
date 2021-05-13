@@ -1,7 +1,7 @@
 import React from "react";
 import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
-import { MenuItems } from "../code/navbar/MenuItems";
+import { MenuItems } from "../code/MenuItems";
 import { FaBars } from "react-icons/fa";
 import Logo from "./Logo.jsx";
 

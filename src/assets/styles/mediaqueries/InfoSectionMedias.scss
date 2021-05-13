@@ -1,7 +1,10 @@
 @import "../Vars.scss";
 
 @media screen and (max-width: 768px) {
-  .info__container {
+  .info__container-dark {
+    padding: 100px 0;
+  }
+  .info__container-light {
     padding: 100px 0;
   }
   .info-row {
@@ -10,7 +13,10 @@
 }
 
 @media screen and (max-width: 480px) {
-  .info-heading {
-    font-size: 32px;
+  .info-heading-dark {
+    font-size: 2rem;
+  }
+  .info-heading-light {
+    font-size: 2rem;
   }
 }
