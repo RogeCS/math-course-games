@@ -1,0 +1,85 @@
+@import "../Vars.scss";
+
+.navbar {
+  background: $light-gray;
+  color: $main-color;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  z-index: 1;
+  width: 100%;
+  padding: 0 24px;
+  max-width: 1100px;
+}
+
+.navbar__container--logo {
+  justify-self: flex-start;
+  cursor: pointer;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-item {
+  height: 80px;
+}
+
+.navbar-links {
+  color: $main-color;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid $main-color;
+  }
+}
+
+.navbar-btn {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-btn-link {
+  border-radius: 50px;
+  background: $main-color;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: $white-color;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: $main-color-light;
+  }
+}
+
+@import "../mediaqueries/NavbarMedias.scss";

@@ -1,13 +1,19 @@
-import React from "react";
-import Navbar from "./navbar/Navbar.jsx";
+import React, { useState } from "react";
+import Navbar from "./Navbar.jsx";
+import Sidebar from "./Sidebar.jsx";
 
 import "../assets/styles/components/Header.scss";
 
-const Header = () => (
-  <div className="header">
-    <div className="grid__container">
-      <Navbar />
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+  return (
+    <div className="header">
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
     </div>
-  </div>
-);
+  );
+};
 export default Header;

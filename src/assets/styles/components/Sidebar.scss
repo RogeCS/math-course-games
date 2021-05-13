@@ -1,0 +1,95 @@
+@import "../Vars.scss";
+
+.sidebar__container--open {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: $main-color;
+  display: grid;
+  align-items: center;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  opacity: 100%;
+  top: 0;
+}
+
+.sidebar__container--closed {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: $main-color;
+  display: grid;
+  align-items: center;
+  left: 0;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  top: -100%;
+}
+
+.icon {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.5rem;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+  color: $white-color;
+}
+
+.sidebar-wrapper {
+  color: $white-color;
+}
+
+.sidebar-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 80px);
+  text-align: center;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  color: $white-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $blue-green;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+.sidebar-btn-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-route {
+  border-radius: 50px;
+  background: $blue-green;
+  color: $white-color;
+  white-space: nowrap;
+  padding: 16px 54px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: $light-blue;
+    color: $main-color;
+  }
+}
+
+@import "../mediaqueries/SidebarMedias.scss";
