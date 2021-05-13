@@ -1,0 +1,43 @@
+@import "../Vars.scss";
+
+.light-button {
+  border-radius: 50px;
+  background: $white-color;
+  color: $main-color;
+  white-space: nowrap;
+  padding: 12px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: $light-gray;
+  }
+}
+
+.dark-button {
+  border-radius: 50px;
+  background: $main-color;
+  color: $white-color;
+  white-space: nowrap;
+  padding: 12px 30px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: $main-color-light;
+  }
+}

@@ -19,13 +19,18 @@ const Sidebar = ({ isOpen, toggle }) => {
         <section className="sidebar-wrapper">
           <ul className="sidebar-menu">
             {MenuItems.map((item, index) => (
-              <LinkS className="sidebar-link" key={index} to={item.url}>
+              <LinkS
+                className="sidebar-link"
+                onClick={toggle}
+                key={index}
+                to={item.url}
+              >
                 {item.title}
               </LinkS>
             ))}
           </ul>
           <div className="sidebar-btn-wrap">
-            <LinkR className="sidebar-route" to="/">
+            <LinkR onClick={toggle} className="sidebar-route" to="/">
               Entrar
             </LinkR>
           </div>

@@ -1,16 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import HeroSection from "../components/HeroSection.jsx";
+import InfoSection from "../components/InfoSection.jsx";
+import { homeObjOne } from "../code/infoSectionData.js";
 
 import "../assets/styles/containers/Home.scss";
 const Home = () => {
   return (
     <div className="home">
-      <div className="grid__container">
-        <h1>Esta es la aplicación yaya</h1>
-        <Link to="/course">
-          <button>ir a course</button>
-        </Link>
-      </div>
+      <HeroSection />
+      <InfoSection {...homeObjOne} />
     </div>
   );
 };
