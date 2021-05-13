@@ -6,7 +6,7 @@ import Logo from "../Logo.jsx";
 import "../../assets/styles/components/navbar/navbar.scss";
 
 const Navbar = () => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(false);
   const handleClick = () => {
     return setState(!state);
   };
