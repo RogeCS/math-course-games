@@ -2,9 +2,18 @@
 
 @media screen and (max-width: 480px) {
   .sidebar-menu {
-    grid-template-rows: repeat(5, 60px);
+    grid-template-rows: repeat(6, 60px);
   }
-  .sidebar-link {
-    font-size: 1.2rem;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar-menu {
+    grid-template-rows: repeat(5, 50px);
+  }
+}
+
+@media screen and (max-height: 320px) {
+  .sidebar-menu {
+    grid-template-rows: repeat(5, 45px);
   }
 }

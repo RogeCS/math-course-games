@@ -5,7 +5,7 @@ import Sidebar from "./Sidebar.jsx";
 import "../assets/styles/components/Header.scss";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
     setIsOpen(!isOpen);
   };
