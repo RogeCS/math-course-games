@@ -1,0 +1,25 @@
+@import "./Vars.scss";
+@import "./MediaQueries.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: $theme-font;
+  font-style: normal;
+}
+
+body {
+  background-color: $white-color;
+  color: $main-color;
+  height: 100%;
+  width: 100%;
+}
+
+.grid__container {
+  max-width: 1300px;
+  margin: auto;
+}
