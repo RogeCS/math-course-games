@@ -1,6 +1,14 @@
 import React from "react";
+import NavbarUser from "../components/NavbarUser.jsx";
+
+import "../assets/styles/containers/Course.scss";
 const Course = () => {
-  return <h1>Este es el course page</h1>;
+  return (
+    <>
+      <NavbarUser />
+      <div className="course__container">hola</div>
+    </>
+  );
 };
 
 export default Course;

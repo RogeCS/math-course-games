@@ -10,8 +10,8 @@ const App = () => (
   <BrowserRouter>
     <Layout>
       <Switch>
-        <Route path="/course" component={Course} />
-        <Route component={Home} />
+        <Route path="/courses" component={Course} />
+        <Route path="/" component={Home} />
       </Switch>
     </Layout>
   </BrowserRouter>

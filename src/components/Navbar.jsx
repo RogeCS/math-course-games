@@ -20,6 +20,9 @@ const Navbar = ({ toggle }) => {
   };
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    return () => {
+      setScrollNav({}); // This worked for me
+    };
   }, []);
 
   const toggleHome = () => {
@@ -46,7 +49,7 @@ const Navbar = ({ toggle }) => {
                     duration={500}
                     spy={true}
                     exact="true"
-                    offset={-90}
+                    offset={-80}
                     activeClass="active"
                   >
                     {item.title}
@@ -58,7 +61,7 @@ const Navbar = ({ toggle }) => {
           <nav className="navbar-btn">
             <LinkR
               className={scrollNav ? "navbar-btn-link1" : "navbar-btn-link0"}
-              to="/"
+              to="/courses"
             >
               Entrar
             </LinkR>

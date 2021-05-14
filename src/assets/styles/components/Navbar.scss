@@ -3,8 +3,8 @@
 .navbar-true {
   background: $white-color;
   color: $main-color;
-  height: 90px;
-  margin-top: -90px;
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@
 .navbar-false {
   background: transparent;
   color: $white-color;
-  height: 90px;
-  margin-top: -90px;
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
   z-index: 1;
   width: 100%;
   padding: 0 24px;
