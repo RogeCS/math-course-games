@@ -1,17 +1,17 @@
 export const MenuItems = [
   {
     title: "Coursos",
-    url: "/",
+    url: "courses",
     cName: "navbar-links",
   },
   {
     title: "Nosotros",
-    url: "/",
+    url: "about",
     cName: "navbar-links",
   },
   {
     title: "Apóyanos",
-    url: "/",
+    url: "donor",
     cName: "navbar-links",
   },
   {

@@ -13,7 +13,7 @@
 .info-wrapper {
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 600px;
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
@@ -21,11 +21,18 @@
   justify-content: center;
 }
 
-.info-row {
+.info-row0 {
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: "col1 col2";
+}
+
+.info-row1 {
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: "col2 col1";
 }
 
 .column1 {
@@ -56,7 +63,7 @@
 
 .info-heading-light {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
   color: $light-blue;
@@ -64,7 +71,7 @@
 
 .info-heading-dark {
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
   color: $main-color;
@@ -73,15 +80,17 @@
 .info-subtitle-light {
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 500;
   line-height: 34px;
-  color: $light-blue;
+  color: $light-gray;
 }
 
 .info-subtitle-dark {
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 500;
   line-height: 34px;
   color: $main-color-light;
 }

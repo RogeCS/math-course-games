@@ -14,11 +14,12 @@ const InfoSection = ({
   buttonLabel,
   img,
   alt,
+  startImg,
 }) => {
   return (
     <div className={`info__container-${bgColor}`} id={id}>
       <div className="info-wrapper">
-        <div className="info-row">
+        <div className={`info-row${startImg}`}>
           <section className="column1">
             <div className="text-wrapper">
               <p className="top-line"> {topLine} </p>

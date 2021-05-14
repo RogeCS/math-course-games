@@ -1,8 +1,23 @@
 export const homeObjOne = {
-  id: "about",
+  id: "courses",
   bgColor: "light",
   Text: "dark",
   TextDesc: "dark",
+  topLine: "Cursos",
+  headline: "Entiende conceptos de manera interactiva",
+  description:
+    "Checa los temas que puedes prácticar dentro de nuestra aplicación, cada curso que tomas va formando tu perfil para que así puedas ver tus fortalezas y debilidades",
+  buttonLabel: "Entrar",
+  img: require("../assets/static/undraw_Online_learning_re_qw08.svg"),
+  alt: "Entrar a la aplicación",
+  startImg: 1,
+};
+
+export const homeObjTwo = {
+  id: "about",
+  bgColor: "dark",
+  Text: "light",
+  TextDesc: "light",
   topLine: "Nosotros",
   headline: "Nos enfocamos en promover la educación",
   description:
@@ -10,14 +25,14 @@ export const homeObjOne = {
   buttonLabel: "Apóyanos",
   img: require("../assets/static/undraw_good_team_m7uu.svg"),
   alt: "car",
-  primary: true,
+  startImg: 0,
 };
 
-export const homeObjTwo = {
+export const homeObjThree = {
   id: "donor",
-  bgColor: "dark",
-  Text: "light",
-  TextDesc: "light",
+  bgColor: "light",
+  Text: "dark",
+  TextDesc: "dark",
   topLine: "Sé parte",
   headline: "Ayudanos a continuar",
   description:
@@ -25,5 +40,5 @@ export const homeObjTwo = {
   buttonLabel: "Premuim",
   img: require("../assets/static/undraw_make_it_rain_iwk4.svg"),
   alt: "Dona para apoyarnos",
-  primary: true,
+  startImg: 1,
 };

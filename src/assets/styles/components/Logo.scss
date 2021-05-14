@@ -1,18 +1,36 @@
 @import "../Vars.scss";
 
-.logo__container {
+.logo__container1 {
   display: flex;
   text-decoration: none;
   color: $main-color;
 }
 
-.logo__container h1 {
+.logo__container1 h1 {
   text-decoration: none;
   font-size: 1.6rem;
   align-self: center;
 }
 
-.logo__container img {
+.logo__container1 img {
+  width: 27px;
+  height: 27px;
+  align-self: center;
+}
+
+.logo__container0 {
+  display: flex;
+  text-decoration: none;
+  color: $white-color;
+}
+
+.logo__container0 h1 {
+  text-decoration: none;
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.logo__container0 img {
   width: 27px;
   height: 27px;
   align-self: center;

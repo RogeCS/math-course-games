@@ -1,10 +1,24 @@
 @import "../Vars.scss";
 
-.navbar {
+.navbar-true {
   background: $white-color;
   color: $main-color;
-  height: 80px;
-  margin-top: -80px;
+  height: 90px;
+  margin-top: -90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 0;
+}
+
+.navbar-false {
+  background: transparent;
+  color: $white-color;
+  height: 90px;
+  margin-top: -90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,8 +59,21 @@
   height: 80px;
 }
 
-.navbar-links {
+.navbar-links-true {
   color: $main-color;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 3px solid $main-color-light;
+}
+.navbar-links-false {
+  color: $white-color;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -55,7 +82,7 @@
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid $main-color;
+    border-bottom: 3px solid $white-color;
   }
 }
 
@@ -64,7 +91,7 @@
   align-items: center;
 }
 
-.navbar-btn-link {
+.navbar-btn-link1 {
   border-radius: 50px;
   background: $main-color;
   white-space: nowrap;
@@ -80,6 +107,24 @@
   &:hover {
     transition: all 0.2s ease-in-out;
     background-color: $main-color-light;
+  }
+}
+.navbar-btn-link0 {
+  border-radius: 50px;
+  background: $white-color;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: $main-color;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: $light-blue;
   }
 }
 

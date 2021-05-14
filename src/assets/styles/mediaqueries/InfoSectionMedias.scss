@@ -1,13 +1,20 @@
 @import "../Vars.scss";
 
 @media screen and (max-width: 768px) {
+  .info-wrapper {
+    height: 840px;
+  }
+
   .info__container-dark {
     padding: 100px 0;
   }
   .info__container-light {
     padding: 100px 0;
   }
-  .info-row {
+  .info-row0 {
+    grid-template-areas: "col1" "col2";
+  }
+  .info-row1 {
     grid-template-areas: "col1" "col2";
   }
 }

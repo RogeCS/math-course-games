@@ -1,10 +1,19 @@
 import React from "react";
+import Video from "../assets/videos/production ID_5198161.mp4";
 import "../assets/styles/components/HeroSection.scss";
-
 function HeroSection() {
   return (
     <div className="hero__container">
-      <div className="hero-background"></div>
+      <div className="hero-background">
+        <video
+          className="hero-vid"
+          src={Video}
+          autoPlay
+          loop
+          muted
+          type="video/mp4"
+        />
+      </div>
       <section className="hero-content">
         <h1 className="hero-title">Intenta una nueva forma de aprender</h1>
         <p className="hero-description">

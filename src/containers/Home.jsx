@@ -1,7 +1,11 @@
 import React from "react";
 import HeroSection from "../components/HeroSection.jsx";
 import InfoSection from "../components/InfoSection.jsx";
-import { homeObjOne, homeObjTwo } from "../code/infoSectionData.js";
+import {
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+} from "../code/infoSectionData.js";
 
 import "../assets/styles/containers/Home.scss";
 const Home = () => {
@@ -10,6 +14,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <InfoSection {...homeObjThree} />
     </div>
   );
 };
