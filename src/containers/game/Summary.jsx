@@ -12,7 +12,7 @@ class Summary extends React.PureComponent {
     const { show, score, onPlayAgain } = this.props;
     return (
       <div
-        className={`summary ${false ? "hidden" : ""} animated ${
+        className={`summary ${!show ? "hidden" : ""} animated ${
           show ? "bounceInDown" : "bounceOutUp"
         }`}
       >
