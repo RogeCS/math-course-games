@@ -1,11 +1,10 @@
 import React from "react";
-import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
-import { MenuItems } from "../code/MenuItems";
+import { Link } from "react-router-dom";
+import { MenuItems } from "../code/MenuItemsUser";
 import { FaTimes } from "react-icons/fa";
 import "../assets/styles/components/Sidebar.scss";
 
-const Sidebar = ({ isOpen, toggle }) => {
+const SidebarUser = ({ isOpen, toggle }) => {
   return (
     <div className="sidebar">
       <div
@@ -19,24 +18,19 @@ const Sidebar = ({ isOpen, toggle }) => {
         <section className="sidebar-wrapper">
           <ul className="sidebar-menu">
             {MenuItems.map((item, index) => (
-              <LinkS
+              <Link
                 className="sidebar-link"
                 onClick={toggle}
                 key={index}
                 to={item.url}
               >
                 {item.title}
-              </LinkS>
+              </Link>
             ))}
           </ul>
-          <div className="sidebar-btn-wrap">
-            <LinkR onClick={toggle} className="sidebar-route" to="/courses">
-              Entrar
-            </LinkR>
-          </div>
         </section>
       </div>
     </div>
   );
 };
-export default Sidebar;
+export default SidebarUser;

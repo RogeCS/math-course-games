@@ -21,7 +21,7 @@ const Navbar = ({ toggle }) => {
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
     return () => {
-      setScrollNav({}); // This worked for me
+      setScrollNav({});
     };
   }, []);
 

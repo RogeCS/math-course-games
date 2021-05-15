@@ -1,0 +1,37 @@
+@import "../Vars.scss";
+
+@media screen and (max-width: 550px) {
+  .courseCard {
+    width: 290px;
+  }
+
+  .courseCard__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+  }
+
+  .courseCard-content {
+    grid-row: 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 10px;
+    overflow: hidden;
+  }
+
+  .courseCard--topline {
+    display: none;
+  }
+
+  .courseCard--title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .courseCard--description {
+    display: none;
+  }
+
+  .courseCard-img__wrap {
+    grid-row: 1;
+  }
+}
