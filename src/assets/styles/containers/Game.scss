@@ -1,3 +1,4 @@
+@import "../Vars.scss";
 $color-dark-gray: #7f8c8d;
 $color-medium-gray: #95a5a6;
 $color-light-green: #ecf0f1;
@@ -21,7 +22,6 @@ $choice-spacing: 15px;
 
 .body-game {
   justify-content: center;
-  font-family: Roboto;
   background-color: $color-light-green;
   color: $color-dark-blue;
 }
