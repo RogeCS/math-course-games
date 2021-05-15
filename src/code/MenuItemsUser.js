@@ -9,9 +9,4 @@ export const MenuItems = [
     url: "/games",
     cName: "navbar-links",
   },
-  {
-    title: "Salir",
-    url: "/",
-    cName: "navbar-links",
-  },
 ];

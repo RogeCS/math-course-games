@@ -1,6 +1,6 @@
 export const MenuItems = [
   {
-    title: "Coursos",
+    title: "Empieza",
     url: "courses",
     cName: "navbar-links",
   },
@@ -12,11 +12,6 @@ export const MenuItems = [
   {
     title: "Apóyanos",
     url: "donor",
-    cName: "navbar-links",
-  },
-  {
-    title: "Registrarse",
-    url: "/",
     cName: "navbar-links",
   },
 ];

@@ -15,6 +15,7 @@ const InfoSection = ({
   img,
   alt,
   startImg,
+  url,
 }) => {
   return (
     <div className={`info__container-${bgColor}`} id={id}>
@@ -26,7 +27,7 @@ const InfoSection = ({
               <h1 className={`info-heading-${Text}`}>{headline}</h1>
               <h2 className={`info-subtitle-${TextDesc}`}>{description}</h2>
               <div className="btn-wrap">
-                <Button to="home" title={buttonLabel} type="light-button" />
+                <Button to={url} title={buttonLabel} type="light-button" />
               </div>
             </div>
           </section>

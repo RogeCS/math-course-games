@@ -15,9 +15,9 @@ function HeroSection() {
         />
       </div>
       <section className="hero-content">
-        <h1 className="hero-title">Intenta una nueva forma de aprender</h1>
+        <h1 className="hero-title">Prueba una nueva forma de aprender</h1>
         <p className="hero-description">
-          Desarrolla un pensamiento lógico matemático de manera interactiva, no
+          Desarrolla un pensamiento lógico matemático de manera interactiva. !No
           aprendas a resolver, aprende a razonar!
         </p>
       </section>
