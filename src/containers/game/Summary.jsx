@@ -12,17 +12,17 @@ class Summary extends React.PureComponent {
     const { show, score, onPlayAgain } = this.props;
     return (
       <div
-        className={`summary ${!this.mounted ? "hidden" : ""} animated ${
+        className={`summary ${false ? "hidden" : ""} animated ${
           show ? "bounceInDown" : "bounceOutUp"
         }`}
       >
         <div className="title">
-          <div className="big">GOOD JOB!</div>
-          Your Score is:
+          <div className="big">!Buen trabajo!</div>
+          Tu puntuación:
         </div>
         <Badge score={score} />
         <div className="button" onClick={onPlayAgain}>
-          PLAY AGAIN
+          OTRA VEZ
         </div>
       </div>
     );

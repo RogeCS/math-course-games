@@ -9,14 +9,14 @@ $color-red: #e74c3c;
 $color-yellow: #f1c40f;
 $color-torquoise: #1abc9c;
 
-$choice-width: 80px;
+$choice-width: 60px;
 $choice-height: 50px;
 $choice-spacing: 15px;
 
 .body-game {
-  margin-top: 80px;
   width: 100%;
   height: 100%;
+  margin-top: 80px;
 }
 
 .body-game {
@@ -25,11 +25,13 @@ $choice-spacing: 15px;
   background-color: $color-light-green;
   color: $color-dark-blue;
 }
+
 .body-game div {
   user-select: none;
 }
 
 .container {
+  height: 100px;
   width: 400px;
   display: flex;
   justify-content: space-between;
@@ -46,13 +48,13 @@ $choice-spacing: 15px;
   display: flex;
   align-items: flex-end;
   width: 100%;
+  height: 100px;
   justify-content: center;
   background-color: $color-torquoise;
   flex: 1;
-  margin-bottom: 25px;
 
   .container {
-    margin-bottom: -25px;
+    margin: 25px 10px -25px 10px;
   }
 
   .timer,
@@ -65,7 +67,7 @@ $choice-spacing: 15px;
 
   .timer {
     font-size: 18px;
-    width: 100px;
+    width: 85px;
     height: 50px;
     background-color: white;
     border-radius: 3px;
@@ -104,8 +106,9 @@ $choice-spacing: 15px;
     }
 
     .score {
-      font-size: 26px;
+      font-size: 22px;
     }
+
     .multiplier {
       position: absolute;
       right: -20px;
@@ -234,6 +237,8 @@ $choice-spacing: 15px;
 
 .summary {
   position: fixed;
+  top: 0;
+  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,6 +249,7 @@ $choice-spacing: 15px;
 
   &.hidden {
     visibility: hidden;
+    display: none;
   }
 
   .badge {

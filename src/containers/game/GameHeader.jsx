@@ -25,6 +25,7 @@ class GameHeader extends React.PureComponent {
       const node = ReactDOM.findDOMNode(this.change);
       node.className = "change animated hidden";
     }
+    return null;
   }
 
   componentDidUpdate() {
