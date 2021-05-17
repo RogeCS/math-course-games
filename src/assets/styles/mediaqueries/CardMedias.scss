@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 550px) {
   .courseCard {
-    width: 290px;
+    width: calc(100vw - 50px);
   }
 
   .courseCard__container {
