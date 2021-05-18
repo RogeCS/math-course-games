@@ -1,0 +1,31 @@
+@import "../../Vars.scss";
+
+.right-linear-divider__container {
+  margin: 60px 5px 50px 5px;
+}
+
+.right-linear-heading {
+  font-size: 1.7rem;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  color: $main-color;
+  text-transform: uppercase;
+}
+
+.right-linear-divider {
+  border-bottom: 1px solid $light-blue;
+  height: 1px;
+  margin: 0.5em 0px 1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .right-linear-divider__container {
+    margin: 50px 5px 30px 5px;
+  }
+
+  .right-linear-heading {
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
+}

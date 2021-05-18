@@ -1,7 +1,8 @@
 import React from "react";
 import ScrollToTop from "../code/scrollToTop";
 import HeaderUser from "../components/HeaderUser.jsx";
-import ApexChart from "../components/course-page/ApexChart.jsx";
+import ChartHolder from "../components/course-page/ChartHolder.jsx";
+import SectionDivider from "../components/dividers/SectionDivider.jsx";
 import Card from "../components/course-page/Card.jsx";
 import { courseCardsData as data } from "../code/courseCardsData";
 
@@ -12,18 +13,8 @@ const Course = () => {
     <div className="courses">
       <HeaderUser />
       <div className="courses__container">
-        <div className="graph-wrapper">
-          <div className="graph-content-wrap">
-            <h1 className="graph-content-title">Bienvenido, Guillermo</h1>
-            <p className="graph-content-description">
-              ¡En esta gráfica podrás ver tu progreso para que puedas atacar
-              esas áreas de oportunidad!
-            </p>
-          </div>
-          <div className="chart-wrap">
-            <ApexChart />
-          </div>
-        </div>
+        <ChartHolder userName="Guillermo" />
+        <SectionDivider heading="Añadidos recientemente" />
         {data.map((item, index) => (
           <Card key={index} {...item} />
         ))}
