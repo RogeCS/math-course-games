@@ -12,13 +12,13 @@ class ApexChart extends Component {
         },
         xaxis: {
           categories: [
-            "Lógica",
+            "Trigonometría",
             "Álgebra",
             "Cálculo",
             "Estadística",
             "Aritmética",
             "Geometría",
-            "Trigonometría",
+            "Lógica",
             "Multivariable",
           ],
         },

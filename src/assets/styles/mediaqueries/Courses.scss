@@ -1,0 +1,10 @@
+@import "../Vars.scss";
+
+@media screen and (max-width: 550px) {
+  .graph-wrapper {
+    height: 500px;
+  }
+  .graph-content-wrap {
+    margin: 10px;
+  }
+}

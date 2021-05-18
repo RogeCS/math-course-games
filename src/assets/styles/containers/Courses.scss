@@ -6,7 +6,7 @@
 
 .graph-wrapper {
   background: white;
-  height: 800px;
+  height: 700px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -18,8 +18,14 @@
   margin: 20px;
 }
 
+.graph-content-title {
+  margin-bottom: 10px;
+}
+
 .chart-warp {
   position: absolute;
   max-width: 100%;
   margin: 5px;
 }
+
+@import "../mediaqueries/Courses.scss";

@@ -14,7 +14,7 @@ const Course = () => {
       <div className="courses__container">
         <div className="graph-wrapper">
           <div className="graph-content-wrap">
-            <h1 className="graph-content-title">Bienvenido Nombre</h1>
+            <h1 className="graph-content-title">Bienvenido, Guillermo</h1>
             <p className="graph-content-description">
               ¡En esta gráfica podrás ver tu progreso para que puedas atacar
               esas áreas de oportunidad!
