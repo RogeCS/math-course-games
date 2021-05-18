@@ -7,7 +7,8 @@
 .courseCard {
   background: $white-color;
   height: 250px;
-  width: 500px;
+  max-width: 100%;
+  width: 90vw;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
   border-radius: 5px;
@@ -40,12 +41,12 @@
 }
 
 .courseCard--title {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 .courseCard--description {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   align-self: start;
 }
 
