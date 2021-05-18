@@ -27,3 +27,9 @@
     font-size: 2rem;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .info-wrapper {
+    height: 500px;
+  }
+}
