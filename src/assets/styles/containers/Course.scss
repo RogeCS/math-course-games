@@ -1,0 +1,60 @@
+@import "../Vars.scss";
+
+.specific-course {
+  max-width: 800px;
+  margin: auto;
+}
+.specific-course__container {
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 20px;
+}
+
+.course-exit-icon {
+  text-decoration: none;
+  color: $main-color;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $blue-green;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.course-exit-icon p {
+  margin-left: 5px;
+}
+
+.course-content-wrap {
+  margin-top: 20px;
+}
+
+.course-content-wrap h2 {
+  font-size: 0.6rem;
+  color: $blue-green;
+  letter-spacing: 3px;
+  margin: 7px 0;
+  text-transform: uppercase;
+}
+
+.course-content-wrap h1 {
+  font-size: 1.2rem;
+  margin: 20 0;
+}
+
+.course-content-wrap p {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  line-height: 1.3rem;
+}
+
+.equation-wrap {
+  margin: 25px 0;
+}
+
+.equation-wrap img {
+  margin: 10px 0;
+  display: block;
+}
