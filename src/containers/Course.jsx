@@ -1,5 +1,8 @@
 import React from "react";
 import ScrollToTop from "../code/scrollToTop";
+import Slider from "@material-ui/core/Slider";
+import BarChart from "../components/charts/BarChart.jsx";
+import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 
@@ -11,8 +14,37 @@ import eq5 from "../assets/static/equations/equation5.svg";
 
 import "../assets/styles/containers/Course.scss";
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "98%",
+    margin: "40px auto 10px auto",
+  },
+}));
+
+const marks = [
+  {
+    value: -5,
+    label: "-5",
+  },
+  {
+    value: 5,
+    label: "5",
+  },
+];
+
+function valuetext(value) {
+  return `${value}`;
+}
+
 const Course = () => {
   ScrollToTop();
+  const classes = useStyles();
+  const [val, setVal] = React.useState(0);
+
+  const handleChange = (event, value) => {
+    setVal(value);
+  };
+
   return (
     <div className="specific-course">
       <div className="specific-course__container">
@@ -54,6 +86,21 @@ const Course = () => {
               <img src={eq5} alt="" />
             </div>
           </div>
+          <BarChart />
+          <div className={classes.root}>
+            <Slider
+              min={-5}
+              max={5}
+              defaultValue={0}
+              getAriaValueText={valuetext}
+              aria-labelledby="discrete-slider-always"
+              step={1}
+              marks={marks}
+              valueLabelDisplay="on"
+              onChange={handleChange}
+            />
+          </div>
+          <p>c={val}</p>
         </section>
       </div>
     </div>
