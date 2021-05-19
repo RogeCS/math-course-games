@@ -28,8 +28,8 @@
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 479px) {
   .info-wrapper {
-    height: 500px;
+    min-height: 600px;
   }
 }
