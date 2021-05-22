@@ -86,7 +86,7 @@ const Course = () => {
               <img src={eq5} alt="" />
             </div>
           </div>
-          <BarChart />
+          <BarChart c={val} />
           <div className={classes.root}>
             <Slider
               min={-5}
