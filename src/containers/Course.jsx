@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollToTop from "../code/scrollToTop";
 import Slider from "@material-ui/core/Slider";
-import BarChart from "../components/charts/BarChart.jsx";
+import ScatterChart from "../components/charts/ScatterChart.jsx";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
@@ -23,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
 
 const marks = [
   {
-    value: -5,
-    label: "-5",
+    value: -50,
+    label: "-50",
   },
   {
-    value: 5,
-    label: "5",
+    value: 50,
+    label: "50",
   },
 ];
 
@@ -86,21 +86,21 @@ const Course = () => {
               <img src={eq5} alt="" />
             </div>
           </div>
-          <BarChart c={val} />
+          <ScatterChart c={val} />
           <div className={classes.root}>
             <Slider
-              min={-5}
-              max={5}
+              min={-50}
+              max={50}
               defaultValue={0}
               getAriaValueText={valuetext}
               aria-labelledby="discrete-slider-always"
-              step={1}
+              step={10}
               marks={marks}
               valueLabelDisplay="on"
               onChange={handleChange}
             />
           </div>
-          <p>c={val}</p>
+          <p>c = {val}</p>
         </section>
       </div>
     </div>
