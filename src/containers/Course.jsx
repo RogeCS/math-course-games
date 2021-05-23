@@ -2,21 +2,17 @@ import React from "react";
 import ScrollToTop from "../code/scrollToTop";
 import Slider from "@material-ui/core/Slider";
 import ScatterChart from "../components/charts/ScatterChart.jsx";
+import { xVector, yVector } from "../code/Vectors";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 
-import eq1 from "../assets/static/equations/equation.svg";
-import eq2 from "../assets/static/equations/equation2.svg";
-import eq3 from "../assets/static/equations/equation3.svg";
-import eq4 from "../assets/static/equations/equation4.svg";
-import eq5 from "../assets/static/equations/equation5.svg";
-
+var Latex = require("react-latex");
 import "../assets/styles/containers/Course.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: "98%",
+    width: "70%",
     margin: "40px auto 10px auto",
   },
 }));
@@ -45,6 +41,9 @@ const Course = () => {
     setVal(value);
   };
 
+  let x = xVector(-30, 30, 300);
+  let y = yVector(x, val, 0);
+
   return (
     <div className="specific-course">
       <div className="specific-course__container">
@@ -62,31 +61,28 @@ const Course = () => {
               traslación de funciones toma lugar.
             </p>
             <p>
-              Por ejemplo si queremos desplazar la gráfica de una ecuación hacia
+              Por ejemplo si queremos desplazar la gráfica de una función hacia
               la derecha, hacia la izquierda, hacia arriba o hacia abajo ¿Cómo
               le hacemos?.
             </p>
             <p>
               Empecemos con algo sencillo, si quremos aumentar el valor de una
-              variable 'y' simplemente le tenemos que sumar una constante 'c'.
+              variable "y", simplemente le tenemos que sumar una número "c".
             </p>
-            <div className="equation-wrap">
-              <img src={eq1} alt="" />
-              <img src={eq2} alt="" />
-            </div>
+            <Latex displayMode={true}>$$y = 3, \;c = 2$$</Latex>
+            <Latex displayMode={true}>$$y = y + c$$</Latex>
+            <Latex displayMode={true}>$$y = 3 + 2$$</Latex>
+            <Latex displayMode={true}>$$y = 5$$</Latex>
             <p>
-              En el caso de una función, simplemente tenemos que sumar una
-              constante a nuestra función y la misma subirá en el eje 'y'. Lo
-              mismo sería si queremos bajarla, en este caso tendríamos que
-              restarle una constante 'c'.
+              En el caso de una función, de la misma forma, tenemos que sumar
+              una constante a nuestra función y la misma subirá en el eje "y".
+              Si queremos bajarla tenemos que restarle una constante "c".
             </p>
-            <div className="equation-wrap">
-              <img src={eq3} alt="" />
-              <img src={eq4} alt="" />
-              <img src={eq5} alt="" />
-            </div>
+            <Latex displayMode={true}>$$f(x) = x^2$$</Latex>
+            <Latex displayMode={true}>$$f(x) = x^2 + c$$</Latex>
+            <Latex displayMode={true}>$$f(x) = x^2 - c$$</Latex>
           </div>
-          <ScatterChart c={val} />
+          <ScatterChart x={x} y={y} />
           <div className={classes.root}>
             <Slider
               min={-50}
@@ -100,7 +96,11 @@ const Course = () => {
               onChange={handleChange}
             />
           </div>
-          <p>c = {val}</p>
+          <div className="latex-p">
+            <Latex displayMode={true}>$f(x) = x^2 $</Latex>
+            <p> {val >= 0 ? ` + ${val}` : ` - ${Math.abs(val)}`}</p>
+          </div>
+          <div className="course-questionnaire"></div>
         </section>
       </div>
     </div>

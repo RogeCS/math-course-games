@@ -50,11 +50,8 @@
   line-height: 28px;
 }
 
-.equation-wrap {
-  margin: 40px 0;
-}
-
-.equation-wrap img {
-  margin: 10px 0;
-  display: block;
+.latex-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
