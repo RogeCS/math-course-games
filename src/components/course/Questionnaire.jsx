@@ -1,5 +1,7 @@
 import React from "react";
 import SectionDivider from "../dividers/SectionDivider.jsx";
+import Table from "./Table.jsx";
+import { table1, table2 } from "../../code/TableContents";
 var Latex = require("react-latex");
 
 import "../../assets/styles/components/course-preview/Questionnaire.scss";
@@ -61,7 +63,28 @@ const Questionnaire = () => {
       </div>
       {why && (
         <div className="why-correct-answer">
-          <SectionDivider heading="" />
+          <div className="why-text-content">
+            <SectionDivider heading="" />
+            <p>
+              Vamos a tabular ambas funciones. Si tomamos cualquier punto como
+              referencia, ejemplo: <Latex>$x=0$</Latex> podemos observar que en
+              la función original <Latex>$f(0)=0^2 = 0$</Latex>.
+            </p>
+            <p>
+              En <Latex>$f(x)=x^2 -3$</Latex> podemos evaluar el misimo punto
+              <Latex>$x=0$</Latex> y observamos que
+              <Latex>$f(0)=0^2 -3 = -3$</Latex>.
+            </p>
+            <p>
+              Si realizamos el análisis anterior para cada punto observamos que
+              todos disminuyeron 3 unidades en el eje <Latex>$y$</Latex>, por lo
+              tanto podemos decir que la gráfica bajo en este eje.
+            </p>
+          </div>
+          <div className="why-table-wrap">
+            <Table table={table1} />
+            <Table table={table2} />
+          </div>
         </div>
       )}
     </div>
