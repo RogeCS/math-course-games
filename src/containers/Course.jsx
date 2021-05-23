@@ -1,7 +1,10 @@
 import React from "react";
 import ScrollToTop from "../code/scrollToTop";
+import ProgressBar from "../components/course/ProgressBar.jsx";
 import Slider from "@material-ui/core/Slider";
 import ScatterChart from "../components/charts/ScatterChart.jsx";
+import SectionDivider from "../components/dividers/SectionDivider.jsx";
+import Questionnaire from "../components/course/Questionnaire.jsx";
 import { xVector, yVector } from "../code/Vectors";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
@@ -51,6 +54,7 @@ const Course = () => {
           <FaArrowLeft />
           <p>Salir</p>
         </Link>
+        <ProgressBar />
         <section className="course-content__container">
           <div className="course-content-wrap">
             <h2>Cálculo básico</h2>
@@ -100,7 +104,10 @@ const Course = () => {
             <Latex displayMode={true}>$f(x) = x^2 $</Latex>
             <p> {val >= 0 ? ` + ${val}` : ` - ${Math.abs(val)}`}</p>
           </div>
-          <div className="course-questionnaire"></div>
+          <SectionDivider heading="pregunta" />
+          <div className="course-questionnaire">
+            <Questionnaire />
+          </div>
         </section>
       </div>
     </div>

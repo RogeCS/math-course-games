@@ -1,0 +1,50 @@
+@import "../../Vars.scss";
+$fill: #3498db;
+$empty: #e0e0e0;
+
+.progressBar__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 20px 0px;
+}
+
+.progressBar-wrapper::before {
+  content: "";
+  background: $empty;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 4px;
+  width: 100%;
+  z-index: -1;
+}
+
+.progressBar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progressBar {
+  position: absolute;
+}
+
+.circle {
+  background: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $empty;
+  transition: 0.4s ease;
+}
+
+.circle.active {
+  border-color: $fill;
+}
