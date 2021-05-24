@@ -14,12 +14,12 @@ const ProgressBar = ({ num }) => {
           to="/course1-1"
           className={num == 1 ? "circle active" : "circle"}
         ></Link>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
+        <Link to="/in-development" className="circle"></Link>
+        <Link to="/in-development" className="circle"></Link>
+        <Link to="/in-development" className="circle"></Link>
+        <Link to="/in-development" className="circle"></Link>
+        <Link to="/in-development" className="circle"></Link>
+        <Link to="/in-development" className="circle"></Link>
       </div>
     </div>
   );

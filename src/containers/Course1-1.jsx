@@ -139,7 +139,7 @@ const Course1 = () => {
           <div className="course-questionnaire">
             <Questionnaire1
               prev="/course"
-              next="/course1-1"
+              next="/in-development"
               table1={table3}
               table2={table4}
             />

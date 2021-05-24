@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/styles/components/course-page/Card.scss";
 
-const Card = ({ theme, title, desc, img, url }) => (
-  <div to="/courses" className="courseCard">
+const Card = ({ theme, title, desc, img, url, available }) => (
+  <div className={available ? "courseCard" : "courseCard-unavailable"}>
     <Link to={url} className="courseCardLink">
       <div className="courseCard__container">
         <div className="courseCard-content">
