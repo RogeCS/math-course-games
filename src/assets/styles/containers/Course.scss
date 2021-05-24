@@ -7,7 +7,7 @@
 .specific-course__container {
   min-height: 100vh;
   max-width: 800px;
-  margin: 20px;
+  margin: 20px 20px 0 20px;
 }
 
 .course-exit-icon {
@@ -48,6 +48,19 @@
   font-size: 18px;
   margin: 10px 0;
   line-height: 28px;
+}
+.interactive-content-wrapper {
+  margin: 60px 0;
+}
+
+.slider-wrap {
+  position: relative;
+}
+.latex-p-wrap {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .latex-p {

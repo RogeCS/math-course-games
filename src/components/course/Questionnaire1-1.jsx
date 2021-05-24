@@ -6,7 +6,7 @@ var Latex = require("react-latex");
 
 import "../../assets/styles/components/course-preview/Questionnaire.scss";
 
-const Questionnaire = ({ prev, next, table1, table2 }) => {
+const Questionnaire1 = ({ prev, next, table1, table2 }) => {
   const [answer, setAnswer] = React.useState(0);
   const [styles, setStyles] = React.useState(false);
   const [why, setWhy] = React.useState(false);
@@ -20,37 +20,37 @@ const Questionnaire = ({ prev, next, table1, table2 }) => {
   return (
     <div className="questionnaire">
       <h2 className="question">
-        Recordando la función f(x) = x^2.
-        <br /> Si queremos desplazarla 3 unidades hacia abajo ¿cuál sería la
-        función resultante?
+        recordando la función f(x) = x^2
+        <br /> Si queremos desplazarla 5 unidades a la derecha ¿cuál sería la
+        función resultante??
       </h2>
       <div
         tabIndex="0"
         className={styles && answer === 1 ? "answer wrong" : "answer"}
         onClick={() => setAnswer(1)}
       >
-        <Latex>$f(x) = x^2 + 3$</Latex>
+        <Latex>$f(x) = x^2 + 5$</Latex>
       </div>
       <div
         tabIndex="1"
-        className={styles && answer === 4 ? "answer correct" : "answer"}
+        className={styles && answer === 4 ? "answer wrong" : "answer"}
         onClick={() => setAnswer(4)}
       >
-        <Latex>$f(x) = x^2 - 3$</Latex>
+        <Latex>$f(x) = (x+5)^2$</Latex>
       </div>
       <div
         tabIndex="2"
         className={styles && answer === 2 ? "answer wrong" : "answer"}
         onClick={() => setAnswer(2)}
       >
-        <Latex>$f(x) = x^3$</Latex>
+        <Latex>$f(x) = x^2 - 5$</Latex>
       </div>
       <div
         tabIndex="3"
-        className={styles && answer === 3 ? "answer wrong" : "answer"}
+        className={styles && answer === 3 ? "answer correct" : "answer"}
         onClick={() => setAnswer(3)}
       >
-        <Latex>$f(x) = (x-3)^2 - 3$</Latex>
+        <Latex>$f(x) = (x-5)^2$</Latex>
       </div>
       <div className="questionnaire__buttons-wrapper">
         <button className="dark-button" onClick={checkAnswer}>
@@ -66,19 +66,22 @@ const Questionnaire = ({ prev, next, table1, table2 }) => {
           <div className="why-text-content">
             <SectionDivider heading="" />
             <p>
-              Vamos a tabular ambas funciones. Si tomamos cualquier punto como
-              referencia, ejemplo: <Latex>$x=0$</Latex> podemos observar que en
-              la función original <Latex>$f(0)=0^2 = 0$</Latex>.
+              Volvamos a tabular. Si tomamos cualquier punto como referencia,
+              ejemplo: <Latex>$x=0$</Latex> podemos observar que en la función
+              original <Latex>$f(0)=0^2 = 0$</Latex>.
             </p>
             <p>
-              En <Latex>$f(x)=x^2 -3$</Latex> podemos evaluar el mismo punto
-              <Latex>$x=0$</Latex> y observamos que
-              <Latex>$f(0)=0^2 -3 = -3$</Latex>.
+              Si queremos que nuestro punto <Latex>$0$</Latex> se encuentre{" "}
+              <Latex>$5$</Latex> unidades a la derecha <Latex>$x$</Latex> tendrá
+              que valer 5 positivo para que cuando le restemos la constate{" "}
+              <Latex>$c=5$</Latex> obtengamos <Latex>$0$</Latex>
+              <Latex>$f(x-c)=x^2$, $f(5-5)=0^2=0$</Latex>
             </p>
             <p>
-              Si realizamos el análisis anterior para cada punto observamos que
-              todos disminuyeron 3 unidades en el eje <Latex>$y$</Latex>, por lo
-              tanto podemos decir que la gráfica bajo en este eje.
+              Si te das cuenta se mueve a la derecha cuando restamos c porque x
+              tiene que incrementar para obtener el resultado que esperaríamos
+              de la función original. A continuación puedes observar la
+              tabulación.
             </p>
           </div>
           <div className="why-table-wrap">
@@ -91,4 +94,4 @@ const Questionnaire = ({ prev, next, table1, table2 }) => {
   );
 };
 
-export default Questionnaire;
+export default Questionnaire1;

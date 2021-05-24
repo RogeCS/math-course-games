@@ -1,7 +1,7 @@
 import React from "react";
 import { Scatter } from "react-chartjs-2";
 
-const ScatterChart = ({ x, y }) => {
+const ScatterChart = ({ x, y, color }) => {
   return (
     <div>
       <Scatter
@@ -10,7 +10,7 @@ const ScatterChart = ({ x, y }) => {
             {
               label: "f(x) = x^2",
               data: y,
-              borderColor: "rgb(75, 192, 192)",
+              borderColor: color,
               fill: false,
               tension: 0.6,
             },

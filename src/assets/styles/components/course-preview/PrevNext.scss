@@ -1,0 +1,38 @@
+@import "../../Vars.scss";
+
+.prev-next__container {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100px;
+  background-color: $main-color;
+}
+
+.prev-next-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
+.prev-next-wrapper .div {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $white-color;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: $blue-green;
+    transition: 0.2s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .prev-next-wrapper {
+    font-size: 1rem;
+  }
+}

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "../containers/Home.jsx";
 import Courses from "../containers/Courses.jsx";
 import Course from "../containers/Course.jsx";
+import Course1 from "../containers/Course1-1.jsx";
 import Games from "../containers/Games.jsx";
 
 import "../assets/styles/App.scss";
@@ -10,6 +11,7 @@ import "../assets/styles/App.scss";
 const App = () => (
   <BrowserRouter>
     <Switch>
+      <Route path="/course1-1" component={Course1} />
       <Route path="/course" component={Course} />
       <Route path="/courses" component={Courses} />
       <Route path="/games" component={Games} />
