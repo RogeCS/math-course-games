@@ -72,16 +72,16 @@ const Questionnaire1 = ({ prev, next, table1, table2 }) => {
             </p>
             <p>
               Si queremos que nuestro punto <Latex>$0$</Latex> se encuentre{" "}
-              <Latex>$5$</Latex> unidades a la derecha <Latex>$x$</Latex> tendrá
-              que valer 5 positivo para que cuando le restemos la constate{" "}
-              <Latex>$c=5$</Latex> obtengamos <Latex>$0$</Latex>
+              <Latex>$5$</Latex> unidades a la derecha, <Latex>$x$</Latex>{" "}
+              tendrá que valer 5 para que, cuando le restemos la constate{" "}
+              <Latex>$c=5$</Latex>, obtengamos <Latex>$0$</Latex>. <br />
               <Latex>$f(x-c)=x^2$, $f(5-5)=0^2=0$</Latex>
             </p>
             <p>
               Si te das cuenta se mueve a la derecha cuando restamos c porque x
-              tiene que incrementar para obtener el resultado que esperaríamos
-              de la función original. A continuación puedes observar la
-              tabulación.
+              tiene que incrementar para obtener el resultado en y que
+              esperaríamos de la función original. A continuación puedes
+              observar la tabulación.
             </p>
           </div>
           <div className="why-table-wrap">
