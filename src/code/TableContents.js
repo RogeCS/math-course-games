@@ -46,7 +46,7 @@ export const table3 = {
 
 export const table4 = {
   id: "tl2",
-  title: ["$(x-5)$", "$x^2$"],
+  title: ["$(x-5)$", "$(x-5)^2$"],
   content: [
     ["-5-5=-10", 100],
     ["-4-5=-9", 81],
