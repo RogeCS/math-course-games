@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, HashRouter } from "react-router-dom";
 import Home from "../containers/Home.jsx";
 import Courses from "../containers/Courses.jsx";
 import Course from "../containers/Course.jsx";
@@ -10,7 +10,7 @@ import InDev from "../containers/InDev.jsx";
 import "../assets/styles/App.scss";
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/in-development" component={InDev} />
       <Route path="/course1-1" component={Course1} />
@@ -19,7 +19,7 @@ const App = () => (
       <Route path="/games" component={Games} />
       <Route path="/" component={Home} />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
